@@ -22,10 +22,10 @@ namespace LoginPage
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from Librarian where userName ='" + textBox1.Text + "' and password = '" + textBox2.Text + "'";
+            cmd.CommandText = "select * from Librarian where userName ='" + Text_UserName.Text + "' and password = '" + text_password.Text + "'";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
