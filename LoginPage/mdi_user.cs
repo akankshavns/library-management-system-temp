@@ -68,12 +68,12 @@ namespace LoginPage
 
         private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            toolStrip.Visible = toolBarToolStripMenuItem.Checked;
+            //toolStrip.Visible = toolBarToolStripMenuItem.Checked;
         }
 
         private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            statusStrip.Visible = statusBarToolStripMenuItem.Checked;
+            //statusStrip.Visible = statusBarToolStripMenuItem.Checked;
         }
 
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -102,6 +102,18 @@ namespace LoginPage
             {
                 childForm.Close();
             }
+        }
+
+        private void addNewBooksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           Add_new_books ab = new Add_new_books();
+            ab.Show();
+            this.Hide();
+        }
+
+        private void mdi_user_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
