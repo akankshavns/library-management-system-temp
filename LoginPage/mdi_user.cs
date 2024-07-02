@@ -115,5 +115,11 @@ namespace LoginPage
         {
 
         }
+
+        private void viewBooksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            View_books vb = new View_books();
+            vb.Show();
+        }
     }
 }
