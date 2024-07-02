@@ -78,7 +78,7 @@ namespace LoginPage
                 con.Open();
                 SqlCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "select*From AddBooks where BookName like('%" + textBox1.Text + "%') ";
+                cmd.CommandText = "select*From AddBooks where BookName like('%" + textBox1.Text + "%') or AuthorName like ('%"+textBox1.Text+"%') ";
                 cmd.ExecuteNonQuery();
                 DataTable dt = new DataTable();
                 SqlDataAdapter adapter = new SqlDataAdapter();
@@ -91,6 +91,11 @@ namespace LoginPage
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
