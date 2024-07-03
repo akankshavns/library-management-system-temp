@@ -106,7 +106,7 @@ namespace LoginPage
 
         private void addNewBooksToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           Add_new_books ab = new Add_new_books();
+            Add_new_books ab = new Add_new_books();
             ab.Show();
             this.Hide();
         }
@@ -120,6 +120,13 @@ namespace LoginPage
         {
             View_books vb = new View_books();
             vb.Show();
+        }
+
+        private void updateBooksToolStripMenuItem_Click(object sender, EventArgs e)
+        { 
+            UpdateBooks ub = new UpdateBooks();
+            ub.Show();
+                
         }
     }
 }
