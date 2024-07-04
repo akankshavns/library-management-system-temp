@@ -140,5 +140,11 @@ namespace LoginPage
         {
 
         }
+
+        private void studentDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            view_Student_Info StdentInfo = new view_Student_Info();
+            StdentInfo.Show();
+        }
     }
 }

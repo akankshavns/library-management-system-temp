@@ -8,12 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace LoginPage
 {
     public partial class AddStudent : Form
     {
-       
+        SqlConnection con = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=LibraryDB;Integrated Security=True;Pooling=False;");
+
         public AddStudent()
         {
             InitializeComponent();
@@ -40,6 +42,24 @@ namespace LoginPage
               {
                 MessageBox.Show("AN Error occured", "Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Insert into StudentInformation values('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + image1 + "','"+textBox4.Text+"', '"+textBox5.Text+ "', '"+textBox6.Text+ "', '"+textBox7.Text+"', '"+textBox8.Text+"' )";
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+            //textBox1.Text = "";
+            //textBox2.Text = "";
+            //textBox3.Text = "";
+            //textBox5.Text = "";
+            //textBox6.Text = "";
+
+            MessageBox.Show("Book added successfully");
         }
     }
 }

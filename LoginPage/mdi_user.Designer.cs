@@ -110,6 +110,7 @@
             this.studentDetailsToolStripMenuItem.Name = "studentDetailsToolStripMenuItem";
             this.studentDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.studentDetailsToolStripMenuItem.Text = "Student Details";
+            this.studentDetailsToolStripMenuItem.Click += new System.EventHandler(this.studentDetailsToolStripMenuItem_Click);
             // 
             // updateStudentInfoToolStripMenuItem
             // 
