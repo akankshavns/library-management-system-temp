@@ -128,5 +128,17 @@ namespace LoginPage
             ub.Show();
                 
         }
+
+        private void addNewStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddStudent Ac =  new AddStudent();
+            Ac.Show();
+
+        }
+
+        private void studentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

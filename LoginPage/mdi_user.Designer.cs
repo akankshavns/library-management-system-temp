@@ -33,10 +33,14 @@
             this.booksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.studentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.studentDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateStudentInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.updateBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -44,7 +48,8 @@
             // menuStrip
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.booksToolStripMenuItem});
+            this.booksToolStripMenuItem,
+            this.studentToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(937, 24);
@@ -64,16 +69,53 @@
             // addNewBooksToolStripMenuItem
             // 
             this.addNewBooksToolStripMenuItem.Name = "addNewBooksToolStripMenuItem";
-            this.addNewBooksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addNewBooksToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.addNewBooksToolStripMenuItem.Text = "Add new books";
             this.addNewBooksToolStripMenuItem.Click += new System.EventHandler(this.addNewBooksToolStripMenuItem_Click);
             // 
             // viewBooksToolStripMenuItem
             // 
             this.viewBooksToolStripMenuItem.Name = "viewBooksToolStripMenuItem";
-            this.viewBooksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewBooksToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.viewBooksToolStripMenuItem.Text = "View books";
             this.viewBooksToolStripMenuItem.Click += new System.EventHandler(this.viewBooksToolStripMenuItem_Click);
+            // 
+            // updateBooksToolStripMenuItem
+            // 
+            this.updateBooksToolStripMenuItem.Name = "updateBooksToolStripMenuItem";
+            this.updateBooksToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.updateBooksToolStripMenuItem.Text = "Update Books";
+            this.updateBooksToolStripMenuItem.Click += new System.EventHandler(this.updateBooksToolStripMenuItem_Click);
+            // 
+            // studentToolStripMenuItem
+            // 
+            this.studentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addNewStudentToolStripMenuItem,
+            this.studentDetailsToolStripMenuItem,
+            this.updateStudentInfoToolStripMenuItem});
+            this.studentToolStripMenuItem.Name = "studentToolStripMenuItem";
+            this.studentToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.studentToolStripMenuItem.Text = "Student";
+            this.studentToolStripMenuItem.Click += new System.EventHandler(this.studentToolStripMenuItem_Click);
+            // 
+            // addNewStudentToolStripMenuItem
+            // 
+            this.addNewStudentToolStripMenuItem.Name = "addNewStudentToolStripMenuItem";
+            this.addNewStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addNewStudentToolStripMenuItem.Text = "Add New Student";
+            this.addNewStudentToolStripMenuItem.Click += new System.EventHandler(this.addNewStudentToolStripMenuItem_Click);
+            // 
+            // studentDetailsToolStripMenuItem
+            // 
+            this.studentDetailsToolStripMenuItem.Name = "studentDetailsToolStripMenuItem";
+            this.studentDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.studentDetailsToolStripMenuItem.Text = "Student Details";
+            // 
+            // updateStudentInfoToolStripMenuItem
+            // 
+            this.updateStudentInfoToolStripMenuItem.Name = "updateStudentInfoToolStripMenuItem";
+            this.updateStudentInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.updateStudentInfoToolStripMenuItem.Text = "Update Student Info";
             // 
             // statusStrip
             // 
@@ -90,13 +132,6 @@
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
-            // 
-            // updateBooksToolStripMenuItem
-            // 
-            this.updateBooksToolStripMenuItem.Name = "updateBooksToolStripMenuItem";
-            this.updateBooksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.updateBooksToolStripMenuItem.Text = "Update Books";
-            this.updateBooksToolStripMenuItem.Click += new System.EventHandler(this.updateBooksToolStripMenuItem_Click);
             // 
             // mdi_user
             // 
@@ -130,6 +165,10 @@
         private System.Windows.Forms.ToolStripMenuItem addNewBooksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewBooksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updateBooksToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem studentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addNewStudentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem studentDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem updateStudentInfoToolStripMenuItem;
     }
 }
 
