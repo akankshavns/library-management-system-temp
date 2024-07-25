@@ -53,11 +53,23 @@
     <Compile Include="Add new books.Designer.cs">
       <DependentUpon>Add new books.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddNewAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewAccount.Designer.cs">
+      <DependentUpon>AddNewAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddStudent.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddStudent.Designer.cs">
       <DependentUpon>AddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="issueBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="issueBook.Designer.cs">
+      <DependentUpon>issueBook.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
@@ -94,8 +106,14 @@
     <EmbeddedResource Include="Add new books.resx">
       <DependentUpon>Add new books.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddNewAccount.resx">
+      <DependentUpon>AddNewAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddStudent.resx">
       <DependentUpon>AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="issueBook.resx">
+      <DependentUpon>issueBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
@@ -105,13 +123,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="UpdateBooks.resx">
       <DependentUpon>UpdateBooks.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +146,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

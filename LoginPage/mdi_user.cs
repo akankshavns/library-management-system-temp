@@ -146,5 +146,10 @@ namespace LoginPage
             view_Student_Info StdentInfo = new view_Student_Info();
             StdentInfo.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

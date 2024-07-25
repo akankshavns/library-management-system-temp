@@ -47,11 +47,19 @@ namespace LoginPage
 
         private void LoginPage_Load(object sender, EventArgs e)
         {
+
+            panel1.BackColor = Color.FromArgb(30, 0, 0, 0);
             if (con.State == ConnectionState.Open)
             {
                 con.Close();
             }
             con.Open();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            AddNewAccount ac = new AddNewAccount();
+            ac.Show();
         }
     }
 }

@@ -59,7 +59,7 @@ namespace LoginPage
             //textBox5.Text = "";
             //textBox6.Text = "";
 
-            MessageBox.Show("Book added successfully");
+            MessageBox.Show("Student information added successfully");
         }
     }
 }

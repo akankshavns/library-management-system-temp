@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.upload = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -48,7 +49,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image1)).BeginInit();
             this.SuspendLayout();
@@ -81,10 +81,17 @@
             this.panel1.Size = new System.Drawing.Size(1042, 442);
             this.panel1.TabIndex = 0;
             // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(308, 295);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(272, 23);
+            this.textBox8.TabIndex = 17;
+            // 
             // upload
             // 
             this.upload.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.upload.Location = new System.Drawing.Point(701, 222);
+            this.upload.Location = new System.Drawing.Point(744, 216);
             this.upload.Name = "upload";
             this.upload.Size = new System.Drawing.Size(179, 39);
             this.upload.TabIndex = 16;
@@ -124,9 +131,9 @@
             // image1
             // 
             this.image1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.image1.Location = new System.Drawing.Point(701, 20);
+            this.image1.Location = new System.Drawing.Point(755, 20);
             this.image1.Name = "image1";
-            this.image1.Size = new System.Drawing.Size(213, 176);
+            this.image1.Size = new System.Drawing.Size(159, 176);
             this.image1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.image1.TabIndex = 13;
             this.image1.TabStop = false;
@@ -257,13 +264,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(272, 23);
             this.textBox1.TabIndex = 0;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(308, 295);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(272, 23);
-            this.textBox8.TabIndex = 17;
             // 
             // AddStudent
             // 
