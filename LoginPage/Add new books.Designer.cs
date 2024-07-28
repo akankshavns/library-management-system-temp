@@ -169,7 +169,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(287, 30);
             this.dateTimePicker1.TabIndex = 18;
-            this.dateTimePicker1.Value = new System.DateTime(2024, 6, 30, 20, 15, 11, 0);
+            this.dateTimePicker1.Value = new System.DateTime(2024, 7, 28, 0, 0, 0, 0);
             // 
             // Add_new_books
             // 
@@ -192,6 +192,7 @@
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Name = "Add_new_books";
             this.Text = "Add new books";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Add_new_books_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

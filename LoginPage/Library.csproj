@@ -65,23 +65,29 @@
     <Compile Include="AddStudent.Designer.cs">
       <DependentUpon>AddStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="issueBook.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="issueBook.Designer.cs">
       <DependentUpon>issueBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="Issue_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Issue_list.Designer.cs">
+      <DependentUpon>Issue_list.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="mdi_user.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="mdi_user.Designer.cs">
-      <DependentUpon>mdi_user.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -112,14 +118,17 @@
     <EmbeddedResource Include="AddStudent.resx">
       <DependentUpon>AddStudent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="issueBook.resx">
       <DependentUpon>issueBook.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Issue_list.resx">
+      <DependentUpon>Issue_list.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="mdi_user.resx">
-      <DependentUpon>mdi_user.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -38,8 +38,8 @@ namespace LoginPage
             else
             {
                 this.Hide();
-                mdi_user mu = new mdi_user();
-                mu.Show();
+                HomePage hp = new HomePage();
+                hp.Show();
             }
 
 
