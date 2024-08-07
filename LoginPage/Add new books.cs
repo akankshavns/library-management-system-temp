@@ -27,6 +27,7 @@ namespace LoginPage
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try {
             con.Open();
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
@@ -41,6 +42,11 @@ namespace LoginPage
             textBox6.Text = "";
 
             MessageBox.Show("Book added successfully");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("AN Error occured", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     
 

@@ -16,6 +16,7 @@ namespace LoginPage
         {
             InitializeComponent();
         }
+        bool menuExpand = false;
 
         private void booksToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -26,7 +27,7 @@ namespace LoginPage
         {
             Add_new_books ab = new Add_new_books();
             ab.Show();
-            this.Hide();
+           
         }
 
         private void viewBooksToolStripMenuItem_Click(object sender, EventArgs e)
@@ -68,6 +69,50 @@ namespace LoginPage
         private void HomePage_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void addStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddStudent addStudent = new AddStudent();
+            addStudent.Show();
+        }
+
+        private void viewStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            view_Student_Info view_Student = new view_Student_Info();
+            view_Student.Show();
+        }
+
+        private void updateStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void DashContainer_Tick(object sender, EventArgs e)
+        {
+            if (menuExpand == false)
+            {
+                Menucontainer.Width += 10;
+                if (Menucontainer.Width >= 151)
+                {
+                    menuExpand = true;
+                    DashContainer.Stop();
+                }
+            }
+            else
+                if (menuExpand == true) { 
+                Menucontainer.Width -= 10;
+                if (Menucontainer.Width <= 36)
+                {
+                    menuExpand = false;
+                    DashContainer.Stop();
+                }
+            }
+        }
+
+        private void menuButton_Click(object sender, EventArgs e)
+        {
+            DashContainer.Start();
         }
     }
 }

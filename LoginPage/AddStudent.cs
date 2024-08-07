@@ -39,7 +39,7 @@ namespace LoginPage
                 }
             }
             catch (Exception)
-              {
+            {
                 MessageBox.Show("AN Error occured", "Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
