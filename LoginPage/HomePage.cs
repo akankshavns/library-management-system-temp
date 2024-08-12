@@ -88,31 +88,57 @@ namespace LoginPage
             
         }
 
-        private void DashContainer_Tick(object sender, EventArgs e)
+        
+
+        
+
+        
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            if (menuExpand == false)
-            {
-                Menucontainer.Width += 10;
-                if (Menucontainer.Width >= 151)
-                {
-                    menuExpand = true;
-                    DashContainer.Stop();
-                }
-            }
-            else
-                if (menuExpand == true) { 
-                Menucontainer.Width -= 10;
-                if (Menucontainer.Width <= 36)
-                {
-                    menuExpand = false;
-                    DashContainer.Stop();
-                }
-            }
+
         }
 
-        private void menuButton_Click(object sender, EventArgs e)
+        private void DashContainer_Tick(object sender, EventArgs e)
         {
-            DashContainer.Start();
+
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //private void DashContainer_Tick(object sender, EventArgs e)
+        //{
+        //    if (menuExpand == false)
+        //    {
+        //        Menucontainer.Width += 10;
+        //        if (Menucontainer.Width >= 151)
+        //        {
+        //            menuExpand = true;
+        //            DashContainer.Stop();
+        //        }
+        //    }
+        //    else
+        //        if (menuExpand == true) { 
+        //        Menucontainer.Width -= 10;
+        //        if (Menucontainer.Width <= 36)
+        //        {
+        //            menuExpand = false;
+        //            DashContainer.Stop();
+        //        }
+        //    }
+        //}
+
+        //private void menuButton_Click(object sender, EventArgs e)
+        //{
+        //    DashContainer.Start();
+        //}
     }
 }

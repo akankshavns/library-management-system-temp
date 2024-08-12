@@ -91,6 +91,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UpdateBooks.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +138,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateBooks.resx">
       <DependentUpon>UpdateBooks.cs</DependentUpon>
@@ -156,8 +162,31 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\Performance Macbook.png" />
+    <None Include="Resources\Settings.png" />
+    <None Include="Resources\Logout Rounded.png" />
+    <None Include="Resources\images %282%29.jpeg" />
+    <None Include="Resources\Logbook.png" />
+    <None Include="Resources\Subtract.png" />
+    <None Include="Resources\Student Registration.png" />
+    <None Include="Resources\Restore Down.png" />
+    <None Include="Resources\Menu2.png" />
+    <None Include="Resources\Menu.png" />
+    <None Include="Resources\Man Reading a Book.png" />
+    <None Include="Resources\Close.png" />
+    <None Include="Resources\Book.jpg" />
+    <Content Include="Properties\Logout Rounded.png" />
+    <None Include="Resources\Exterior.png" />
+    <None Include="Resources\House.png" />
+    <Content Include="Resources\image\Close.png" />
+    <Content Include="Resources\image\Man Reading a Book.png" />
+    <Content Include="Resources\image\Menu.png" />
+    <Content Include="Resources\image\Menu2.png" />
+    <Content Include="Resources\image\Restore Down.png" />
+    <Content Include="Resources\image\Student Registration.png" />
+    <Content Include="Resources\image\Subtract.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
