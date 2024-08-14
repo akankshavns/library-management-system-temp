@@ -164,6 +164,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\Password Keyblack.png" />
+    <None Include="Resources\Male User.png" />
+    <None Include="Resources\logo.png" />
     <None Include="Resources\Performance Macbook.png" />
     <None Include="Resources\Settings.png" />
     <None Include="Resources\Logout Rounded.png" />
@@ -180,6 +183,9 @@
     <Content Include="Properties\Logout Rounded.png" />
     <None Include="Resources\Exterior.png" />
     <None Include="Resources\House.png" />
+    <None Include="Resources\ewing-christian-college.jpg" />
+    <None Include="Resources\channels4_profile.jpg" />
+    <None Include="Resources\Eye.png" />
     <Content Include="Resources\image\Close.png" />
     <Content Include="Resources\image\Man Reading a Book.png" />
     <Content Include="Resources\image\Menu.png" />

@@ -16,7 +16,7 @@ namespace LoginPage
         {
             InitializeComponent();
         }
-        bool menuExpand = false;
+        bool menuExpand = true;
 
         private void booksToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -101,7 +101,25 @@ namespace LoginPage
 
         private void DashContainer_Tick(object sender, EventArgs e)
         {
-
+            if (menuExpand == true)
+            {
+                Menucontainer.Width += 10;
+                if (Menucontainer.Width >= 151)
+                {
+                    menuExpand = false;
+                    DashContainer.Stop();
+                }
+            }
+            else
+               if (menuExpand == false)
+            {
+                Menucontainer.Width -= 10;
+                if (Menucontainer.Width <= 36)
+                {
+                    menuExpand = true;
+                    DashContainer.Stop();
+                }
+            }
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -114,31 +132,10 @@ namespace LoginPage
 
         }
 
-        //private void DashContainer_Tick(object sender, EventArgs e)
-        //{
-        //    if (menuExpand == false)
-        //    {
-        //        Menucontainer.Width += 10;
-        //        if (Menucontainer.Width >= 151)
-        //        {
-        //            menuExpand = true;
-        //            DashContainer.Stop();
-        //        }
-        //    }
-        //    else
-        //        if (menuExpand == true) { 
-        //        Menucontainer.Width -= 10;
-        //        if (Menucontainer.Width <= 36)
-        //        {
-        //            menuExpand = false;
-        //            DashContainer.Stop();
-        //        }
-        //    }
-        //}
-
-        //private void menuButton_Click(object sender, EventArgs e)
-        //{
-        //    DashContainer.Start();
-        //}
+        
+        private void menuButton_Click(object sender, EventArgs e)
+        {
+            DashContainer.Start();
+        }
     }
 }

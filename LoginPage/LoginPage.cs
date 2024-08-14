@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Security.Principal;
 
 namespace LoginPage
 {
@@ -15,6 +16,7 @@ namespace LoginPage
     {
         SqlConnection con = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=LibraryDB;Integrated Security=True;Pooling=False;");
         int count = 0;
+        private bool isPasswordVisible = false;
         public LoginPage()
         {
             InitializeComponent();
@@ -45,10 +47,11 @@ namespace LoginPage
 
         }
 
+
         private void LoginPage_Load(object sender, EventArgs e)
         {
 
-            panel1.BackColor = Color.FromArgb(30, 0, 0, 0);
+            panel1.BackColor = Color.FromArgb(60, 0, 0, 0);
             if (con.State == ConnectionState.Open)
             {
                 con.Close();
@@ -58,8 +61,63 @@ namespace LoginPage
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            AddNewAccount ac = new AddNewAccount();
-            ac.Show();
+            //NewAccount ac = new NewAccount();
+            //ac.Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Text_UserName_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void pictureBox6_MouseClick(object sender, MouseEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox6_Layout(object sender, LayoutEventArgs e)
+        {
+
+        }
+
+        private void text_password_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Text_UserName_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (Text_UserName.Text == "User Name")
+            {
+                Text_UserName.Text = "";
+            }
+        }
+
+        private void text_password_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (text_password.Text == "Password")
+            {
+                text_password.Text = "";
+                text_password.UseSystemPasswordChar = !isPasswordVisible;
+            }
+        }
+
+        private void pictureBox2_MouseClick(object sender, MouseEventArgs e)
+        {
+            isPasswordVisible = !isPasswordVisible;
+            text_password.UseSystemPasswordChar = !isPasswordVisible;
+            if (isPasswordVisible)
+            {
+                PasswordVisibility.Text = "Show"; // or set an eye icon for "Hide" state
+            }
+            else
+            {
+                PasswordVisibility.Text = "Hide"; // or set an eye icon for "Show" state
+            }
         }
     }
 }
