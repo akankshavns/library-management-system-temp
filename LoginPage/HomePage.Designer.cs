@@ -44,7 +44,6 @@
             this.returnbookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.DashContainer = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -62,6 +61,17 @@
             this.button5 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
+            this.DashContainer = new System.Windows.Forms.Timer(this.components);
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -71,6 +81,7 @@
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -176,7 +187,6 @@
             this.issueBookListToolStripMenuItem.Name = "issueBookListToolStripMenuItem";
             this.issueBookListToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
             this.issueBookListToolStripMenuItem.Text = "Issue Books";
-            this.issueBookListToolStripMenuItem.Click += new System.EventHandler(this.issueBookListToolStripMenuItem_Click);
             // 
             // issueBookListToolStripMenuItem1
             // 
@@ -211,10 +221,6 @@
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
             this.adminToolStripMenuItem.Size = new System.Drawing.Size(126, 26);
             this.adminToolStripMenuItem.Text = "Admin";
-            // 
-            // DashContainer
-            // 
-            this.DashContainer.Tick += new System.EventHandler(this.DashContainer_Tick);
             // 
             // panel1
             // 
@@ -251,7 +257,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackColor = System.Drawing.Color.Maroon;
             this.panel2.Controls.Add(this.button1);
             this.panel2.ForeColor = System.Drawing.Color.Transparent;
             this.panel2.Location = new System.Drawing.Point(3, 50);
@@ -278,7 +284,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.BackColor = System.Drawing.Color.Maroon;
             this.panel4.Controls.Add(this.button4);
             this.panel4.ForeColor = System.Drawing.Color.Transparent;
             this.panel4.Location = new System.Drawing.Point(3, 140);
@@ -314,12 +320,12 @@
             this.Menucontainer.Dock = System.Windows.Forms.DockStyle.Left;
             this.Menucontainer.Location = new System.Drawing.Point(0, 40);
             this.Menucontainer.Name = "Menucontainer";
-            this.Menucontainer.Size = new System.Drawing.Size(160, 471);
+            this.Menucontainer.Size = new System.Drawing.Size(40, 471);
             this.Menucontainer.TabIndex = 10;
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.BackColor = System.Drawing.Color.Maroon;
             this.panel8.Controls.Add(this.menuButton);
             this.panel8.ForeColor = System.Drawing.Color.Transparent;
             this.panel8.Location = new System.Drawing.Point(3, 5);
@@ -342,11 +348,11 @@
             this.menuButton.TabIndex = 11;
             this.menuButton.Text = "Menu";
             this.menuButton.UseVisualStyleBackColor = false;
-            this.menuButton.Click += new System.EventHandler(this.button3_Click);
+            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.BackColor = System.Drawing.Color.Maroon;
             this.panel6.Controls.Add(this.button6);
             this.panel6.ForeColor = System.Drawing.Color.Transparent;
             this.panel6.Location = new System.Drawing.Point(3, 95);
@@ -373,7 +379,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.BackColor = System.Drawing.Color.Maroon;
             this.panel5.Controls.Add(this.button5);
             this.panel5.ForeColor = System.Drawing.Color.Transparent;
             this.panel5.Location = new System.Drawing.Point(3, 185);
@@ -399,7 +405,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.BackColor = System.Drawing.Color.Maroon;
             this.panel7.Controls.Add(this.button7);
             this.panel7.ForeColor = System.Drawing.Color.Transparent;
             this.panel7.Location = new System.Drawing.Point(3, 230);
@@ -423,12 +429,101 @@
             this.button7.Text = "Log Out\r\n\r\n";
             this.button7.UseVisualStyleBackColor = false;
             // 
+            // DashContainer
+            // 
+            this.DashContainer.Interval = 10;
+            this.DashContainer.Tick += new System.EventHandler(this.DashContainer_Tick);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Silver;
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.panel12);
+            this.panel9.Controls.Add(this.panel16);
+            this.panel9.Controls.Add(this.panel17);
+            this.panel9.Controls.Add(this.panel18);
+            this.panel9.Controls.Add(this.panel15);
+            this.panel9.Controls.Add(this.panel13);
+            this.panel9.Controls.Add(this.panel14);
+            this.panel9.Controls.Add(this.panel11);
+            this.panel9.Controls.Add(this.panel10);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel9.Location = new System.Drawing.Point(40, 40);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(984, 471);
+            this.panel9.TabIndex = 11;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
+            // 
+            // panel16
+            // 
+            this.panel16.Location = new System.Drawing.Point(838, 361);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(139, 100);
+            this.panel16.TabIndex = 2;
+            // 
+            // panel17
+            // 
+            this.panel17.Location = new System.Drawing.Point(838, 255);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(139, 100);
+            this.panel17.TabIndex = 2;
+            // 
+            // panel18
+            // 
+            this.panel18.Location = new System.Drawing.Point(838, 149);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(139, 100);
+            this.panel18.TabIndex = 2;
+            // 
+            // panel15
+            // 
+            this.panel15.Location = new System.Drawing.Point(5, 110);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(827, 356);
+            this.panel15.TabIndex = 2;
+            // 
+            // panel12
+            // 
+            this.panel12.Location = new System.Drawing.Point(633, 7);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(200, 100);
+            this.panel12.TabIndex = 1;
+            // 
+            // panel13
+            // 
+            this.panel13.Location = new System.Drawing.Point(221, 3);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(200, 100);
+            this.panel13.TabIndex = 1;
+            // 
+            // panel14
+            // 
+            this.panel14.Location = new System.Drawing.Point(838, 3);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(139, 140);
+            this.panel14.TabIndex = 1;
+            // 
+            // panel11
+            // 
+            this.panel11.Location = new System.Drawing.Point(5, 4);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(200, 100);
+            this.panel11.TabIndex = 1;
+            // 
+            // panel10
+            // 
+            this.panel10.Location = new System.Drawing.Point(427, 4);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(200, 100);
+            this.panel10.TabIndex = 0;
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1024, 511);
+            this.Controls.Add(this.panel9);
             this.Controls.Add(this.Menucontainer);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -448,6 +543,7 @@
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -468,7 +564,6 @@
         private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem issueBookListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem issueBookListToolStripMenuItem1;
-        private System.Windows.Forms.Timer DashContainer;
         private System.Windows.Forms.Panel panel1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.Windows.Forms.Label label1;
@@ -486,5 +581,16 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Timer DashContainer;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel10;
     }
 }

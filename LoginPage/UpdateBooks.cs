@@ -73,7 +73,8 @@ namespace LoginPage
         private void button1_Click(object sender, EventArgs e)
         {
             int i = 0;
-            i = Convert.ToInt32(dataGridView1.SelectedCells[0].Value.ToString());
+            i = Convert.ToInt32(dataGridView1.SelectedCells[5].Value.ToString());
+            MessageBox.Show(i.ToString());
             try
             {
 

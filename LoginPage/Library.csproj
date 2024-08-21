@@ -65,6 +65,12 @@
     <Compile Include="AddStudent.Designer.cs">
       <DependentUpon>AddStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,12 @@
     </Compile>
     <Compile Include="issueBook.Designer.cs">
       <DependentUpon>issueBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="issueInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="issueInfo.Designer.cs">
+      <DependentUpon>issueInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Issue_list.cs">
       <SubType>Form</SubType>
@@ -123,11 +135,17 @@
     <EmbeddedResource Include="AddStudent.resx">
       <DependentUpon>AddStudent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="issueBook.resx">
       <DependentUpon>issueBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="issueInfo.resx">
+      <DependentUpon>issueInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Issue_list.resx">
       <DependentUpon>Issue_list.cs</DependentUpon>
@@ -164,6 +182,14 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\stick_figure_carrying_books_lg_wm1.gif" />
+    <None Include="Resources\stick_figure_carrying_books_lg_wm.gif" />
+    <None Include="Resources\logo1.png" />
+    <None Include="Resources\Return Book.png" />
+    <None Include="Resources\Waste.png" />
+    <None Include="Resources\Student Male.png" />
+    <None Include="Resources\Open Book Emoji.png" />
+    <None Include="Resources\Search.png" />
     <None Include="Resources\Password Keyblack.png" />
     <None Include="Resources\Male User.png" />
     <None Include="Resources\logo.png" />
@@ -186,6 +212,13 @@
     <None Include="Resources\ewing-christian-college.jpg" />
     <None Include="Resources\channels4_profile.jpg" />
     <None Include="Resources\Eye.png" />
+    <None Include="Resources\Borrow Book.png" />
+    <None Include="Resources\360_F_126353528_Lxr7a33xiRVpuYIuEv40GyW8MQ4N2b9E.jpg" />
+    <None Include="Resources\653a912fceab7eb5de03b0a7b7135b4e.gif" />
+    <None Include="Resources\by default logo.jpg" />
+    <None Include="Resources\653a912fceab7eb5de03b0a7b7135b4e1.gif" />
+    <None Include="Resources\653a912fceab7eb5de03b0a7b7135b4e.jpg" />
+    <None Include="Resources\653a912fceab7eb5de03b0a7b7135b4e %281%29.jpg" />
     <Content Include="Resources\image\Close.png" />
     <Content Include="Resources\image\Man Reading a Book.png" />
     <Content Include="Resources\image\Menu.png" />

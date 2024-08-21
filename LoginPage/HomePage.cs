@@ -16,7 +16,7 @@ namespace LoginPage
         {
             InitializeComponent();
         }
-        bool menuExpand = true;
+
 
         private void booksToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -27,7 +27,7 @@ namespace LoginPage
         {
             Add_new_books ab = new Add_new_books();
             ab.Show();
-           
+
         }
 
         private void viewBooksToolStripMenuItem_Click(object sender, EventArgs e)
@@ -48,11 +48,11 @@ namespace LoginPage
 
         }
 
-        private void issueBookListToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            issueBook ib = new issueBook();
-            ib.Show();
-        }
+        //private void issueBookListToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    IssueBook ib = new IssueBook();
+        //    ib.Show();
+        //}
 
         private void issueBookToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -85,57 +85,51 @@ namespace LoginPage
 
         private void updateStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
         }
 
-        
 
-        
 
-        
+
+
+
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }
-
+        bool sidebarExpand = true;
         private void DashContainer_Tick(object sender, EventArgs e)
         {
-            if (menuExpand == true)
+            if (sidebarExpand)
             {
-                Menucontainer.Width += 10;
-                if (Menucontainer.Width >= 151)
+                Menucontainer.Width -= 10;
+                if (Menucontainer.Width <= 46)
                 {
-                    menuExpand = false;
+                    sidebarExpand = false;
                     DashContainer.Stop();
                 }
             }
             else
-               if (menuExpand == false)
             {
-                Menucontainer.Width -= 10;
-                if (Menucontainer.Width <= 36)
+                Menucontainer.Width += 10;
+                if (Menucontainer.Width >= 160)
                 {
-                    menuExpand = true;
+                    sidebarExpand = true;
                     DashContainer.Stop();
                 }
+
             }
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
         private void menuButton_Click(object sender, EventArgs e)
         {
             DashContainer.Start();
+        }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
